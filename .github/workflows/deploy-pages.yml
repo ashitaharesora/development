@@ -27,12 +27,12 @@ jobs:
           mkdir -p assets/data
 
           curl --fail-with-body --silent --show-error \
-            "https://${{ vars.MICROCMS_SERVICE_ID }}.microcms.io/api/v1/${{ vars.MICROCMS_ENDPOINT_BLOG }}?limit=100" \
+            "https://${{ vars.MICROCMS_SERVICE_ID }}.microcms.io/api/v1/${{ vars.MICROCMS_ENDPOINT_BLOGS }}?limit=100" \
             -H "X-MICROCMS-API-KEY: ${{ secrets.MICROCMS_API_KEY }}" \
             -o assets/data/blog.json
 
           curl --fail-with-body --silent --show-error \
-            "https://${{ vars.MICROCMS_SERVICE_ID }}.microcms.io/api/v1/${{ vars.MICROCMS_ENDPOINT_CATEGORY }}?limit=100" \
+            "https://${{ vars.MICROCMS_SERVICE_ID }}.microcms.io/api/v1/${{ vars.MICROCMS_ENDPOINT_CATEGORIES }}?limit=100" \
             -H "X-MICROCMS-API-KEY: ${{ secrets.MICROCMS_API_KEY }}" \
             -o assets/data/category.json
 
