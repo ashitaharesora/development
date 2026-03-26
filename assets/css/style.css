@@ -2253,3 +2253,89 @@ body:not(.home-page) .service-local-nav li {
     transition: none !important;
   }
 }
+
+/* ===== motion ===== */
+
+.js-fade-up,
+.js-slide-left,
+.js-slide-right {
+  opacity: 0;
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+  will-change: opacity, transform;
+}
+
+.js-fade-up {
+  transform: translateY(22px);
+}
+
+.js-slide-left {
+  transform: translateX(-28px);
+}
+
+.js-slide-right {
+  transform: translateX(28px);
+}
+
+.js-fade-up.is-visible,
+.js-slide-left.is-visible,
+.js-slide-right.is-visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.delay-1 {
+  transition-delay: 0.08s;
+}
+
+.delay-2 {
+  transition-delay: 0.16s;
+}
+
+.delay-3 {
+  transition-delay: 0.24s;
+}
+
+.delay-4 {
+  transition-delay: 0.32s;
+}
+
+.hero-kicker {
+  letter-spacing: 0.08em;
+}
+
+.hero h1,
+.hero p,
+.hero-actions {
+  will-change: opacity, transform;
+}
+
+.card,
+.news-item,
+.blog-item {
+  transition:
+    transform 0.28s ease,
+    box-shadow 0.28s ease,
+    border-color 0.28s ease;
+}
+
+.card:hover,
+.news-item:hover,
+.blog-item:hover {
+  transform: translateY(-4px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .js-fade-up,
+  .js-slide-left,
+  .js-slide-right,
+  .card,
+  .news-item,
+  .blog-item {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
