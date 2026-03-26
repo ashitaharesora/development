@@ -1,122 +1,71 @@
-<!DOCTYPE html>
-<html lang="ja">
+/* ===== header CTA buttons patch ===== */
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>サービス一覧 | ashitaHARESORA′</title>
-  <meta name="description" content="税務・労務・法人化・資金調達・補助金申請・相続などのサービス一覧です。暗号資産・仮想通貨の確定申告にも対応しています。">
-  <meta name="robots" content="index,follow,max-image-preview:large">
-  <link rel="canonical" href="https://ashitaharesora.github.io/ashita-haresora/services/">
-  <meta property="og:title" content="サービス一覧 | ashitaHARESORA′">
-  <meta property="og:description" content="税務・労務・法人化・資金調達・補助金申請・相続などのサービス一覧です。暗号資産・仮想通貨の確定申告にも対応しています。">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://ashitaharesora.github.io/ashita-haresora/services/">
-  <meta property="og:site_name" content="ashitaHARESORA′">
-  <meta property="og:image" content="https://ashitaharesora.github.io/ashita-haresora/assets/img/ogp.jpg">
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="../assets/img/Logo_1.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="../assets/img/Logo_1.svg">
-  <link rel="stylesheet" href="../assets/css/style.css">
-  <script defer src="../assets/js/main.js"></script>
-</head>
+@media (min-width: 901px) {
+  .header-inner {
+    max-width: 1260px;
+  }
 
-<body>
-  <header class="site-header">
-    <div class="header-inner">
-      <a class="brand" href="../index.html" aria-label="高野晶弘税理士事務所 はれそら社労士事務所 トップページ">
-        <img class="brand-logo" src="../assets/img/Logo_1.svg" alt="ashitaHARESORA′ ロゴ">
-        <span class="brand-text">
-          <span class="brand-kicker">元国税職員・税理士・社労士</span>
-          <span class="brand-name">高野晶弘税理士事務所 はれそら社労士事務所</span>
-        </span>
-      </a>
-      <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" data-nav-toggle>
-        <span></span><span></span><span></span>
-      </button>
-      <nav class="nav" data-nav>
-        <div class="nav-list">
-          <a class="nav-item" href="../index.html">ホーム</a>
-          <a class="nav-item" href="../about/">事務所案内</a>
-          <a class="nav-item" href="../services/">サービス</a>
-          <a class="nav-item" href="../news/">お知らせ</a>
-          <a class="nav-item" href="../blog/">ブログ</a>
-          <a class="nav-item" href="../works/">支援事例</a>
-          <a class="nav-item" href="../faq/">FAQ</a>
-          <div class="nav-cta-group">
-            <a class="nav-item cta cta-consult" href="../contact/">無料相談</a>
-            <a class="nav-item cta cta-urgent" href="../contact/?type=sameday" aria-label="お急ぎの方向け 即日契約">即日契約</a>
-            <a class="nav-item cta cta-phone" href="tel:XXX-XXX-XXXX">TEL XXX-XXX-XXXX</a>
-          </div>
-        </div>
-      </nav>
-    </div>
-  </header>
+  .nav-list {
+    gap: 16px;
+  }
+}
 
-  <main>
-    <section class="page-hero">
-      <div class="container">
-        <p class="breadcrumbs"><a href="../index.html">ホーム</a> / <span>サービス</span></p>
-        <h1>サービス一覧</h1>
-        <p class="meta">独立初期の個人事業主を中心に、税務・労務・資金・法人化のご相談に対応しています。</p>
-      </div>
-    </section>
+.nav-cta-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-left: 8px;
+}
 
-    <section class="section">
-      <div class="container">
-        <div class="grid three">
-          <a class="card" href="startup/">
-            <h3>スタートアップ支援</h3>
-            <p>開業準備から法人設立支援まで、独立初期に必要な実務をまとめて整理します。</p>
-          </a>
+.nav-item.cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 9px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--text);
+  font-size: 14px;
+  line-height: 1.2;
+  transition: .2s ease;
+}
 
-          <a class="card" href="cloud/">
-            <h3>クラウド導入支援</h3>
-            <p>マネーフォワードクラウドや労務システムの導入を通じて、バックオフィスの土台づくりを支援します。</p>
-          </a>
+.cta-consult {
+  background: #fff;
+  color: var(--text);
+}
 
-          <a class="card" href="subsidy/">
-            <h3>補助金・助成金申請支援</h3>
-            <p>補助金・助成金の提案から申請支援まで、条件整理を含めてサポートします。</p>
-          </a>
+.cta-urgent {
+  background: var(--text);
+  color: #fff;
+}
 
-          <a class="card" href="succession/">
-            <h3>相続計画・相続対策</h3>
-            <p>相続を見据えた資産整理や納税資金の見通しづくりを支援します。</p>
-          </a>
+.cta-phone {
+  background: #eef6ff;
+  color: #103f70;
+  border-color: var(--accent-strong);
+  font-weight: 600;
+}
 
-          <a class="card" href="tax/">
-            <h3>税理士業務</h3>
-            <p>
-              国税の現場で個人事業主の確定申告に携わってきた経験をもとに、税務の疑問をわかりやすく整理します。<br>
-              暗号資産・仮想通貨の確定申告にも対応しています。
-            </p>
-          </a>
+.nav-item.cta:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(18, 45, 78, .08);
+}
 
-          <a class="card" href="labor/">
-            <h3>社労士業務</h3>
-            <p>社会保険・労働保険・助成金に関する手続きを、税務の視点も踏まえてサポートします。</p>
-          </a>
+@media (max-width: 900px) {
+  .nav-cta-group {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-left: 0;
+    margin-top: 4px;
+  }
 
-          <a class="card" href="management/">
-            <h3>マネジメント</h3>
-            <p>経営全体の悩みに対して、税理士・社労士に加え提携専門家と連携しながら支援します。</p>
-          </a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-links">
-        <a href="../contact/">お問い合わせ</a>
-        <a href="../privacy/">プライバシーポリシー</a>
-        <a href="../access/">アクセス</a>
-      </div>
-      <div>© <span data-year></span> ashitaHARESORA′</div>
-    </div>
-  </footer>
-</body>
-
-</html>
+  .nav-item.cta {
+    width: 100%;
+    min-height: 46px;
+    padding: 12px 16px;
+    text-align: center;
+  }
+}
