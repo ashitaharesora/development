@@ -75,6 +75,28 @@
   resize: vertical;
 }
 
+.c-form__textarea-small {
+  min-height: 120px;
+}
+
+.c-form__choice-group {
+  display: grid;
+  gap: 10px;
+  padding-top: 6px;
+}
+
+.c-form__choice {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--form-text);
+  font-size: 14px;
+}
+
+.c-form__choice input[type="radio"] {
+  accent-color: #172033;
+}
+
 .c-form__submit {
   margin-top: 8px;
 }
