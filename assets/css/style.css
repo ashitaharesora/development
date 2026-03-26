@@ -2339,3 +2339,25 @@ body:not(.home-page) .service-local-nav li {
   }
 }
 
+/* ===== service icons ===== */
+.service-icon {
+  width: 52px;
+  height: 52px;
+  display: block;
+  margin-bottom: 14px;
+  color: #172033;
+  opacity: 0.92;
+}
+
+.card:hover .service-icon {
+  transform: translateY(-1px);
+  transition: transform .2s ease;
+}
+
+@media (max-width: 640px) {
+  .service-icon {
+    width: 46px;
+    height: 46px;
+    margin-bottom: 12px;
+  }
+}
