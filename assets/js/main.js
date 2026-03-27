@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function () {
       return;
     }
 
-    if (window.scrollY > 240) {
+    if (window.scrollY > 10) {
       floatingCta.classList.add('is-visible');
     } else {
       floatingCta.classList.remove('is-visible');
