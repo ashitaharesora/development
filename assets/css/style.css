@@ -2799,3 +2799,22 @@ body:not(.home-page) .service-local-nav li {
     padding-bottom: 20px;
   }
 }
+
+/* ===== header office names split ===== */
+.brand-name {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.18em; /* ← 2つの事務所名の間隔。小さくしたいならここをさらに下げる */
+}
+
+.brand-name-tax,
+.brand-name-labor {
+  display: inline-block;
+}
+
+/* スマホではさらに少し詰める */
+@media (max-width: 768px) {
+  .brand-name {
+    gap: 0.08em;
+  }
+}
