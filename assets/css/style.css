@@ -2818,7 +2818,7 @@ body:not(.home-page) .service-local-nav li {
 @media (max-width: 768px) {
   .nav-item:not(.cta) {
     text-decoration: underline;
-    text-decoration-thickness: 1px;
+    text-decoration-thickness: 0.5px;
     text-underline-offset: 0.16em;
   }
 }
