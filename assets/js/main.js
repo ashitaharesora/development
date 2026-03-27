@@ -65,3 +65,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
   targets.forEach((target) => observer.observe(target));
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const floatingCta = document.getElementById('floating-cta');
+  if (!floatingCta) return;
+
+  const mobileMq = window.matchMedia('(max-width: 768px)');
+
+  const toggleFloatingCta = function () {
+    if (!mobileMq.matches) {
+      floatingCta.classList.remove('is-visible');
+      return;
+    }
+
+    if (window.scrollY > 240) {
+      floatingCta.classList.add('is-visible');
+    } else {
+      floatingCta.classList.remove('is-visible');
+    }
+  };
+
+  toggleFloatingCta();
+  window.addEventListener('scroll', toggleFloatingCta, { passive: true });
+  window.addEventListener('resize', toggleFloatingCta);
+});
