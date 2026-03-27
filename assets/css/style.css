@@ -1807,7 +1807,7 @@ body:not(.home-page) .service-local-nav li {
 .home-page.static-header-home .brand {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 4px;
   min-width: 0;
 }
 
@@ -1931,6 +1931,9 @@ body:not(.home-page) .service-local-nav li {
     gap: 4px 16px;
     justify-content: center;
     padding-top: 3px !important;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.16em;
   }
 
   .home-page.static-header-home .nav-item {
