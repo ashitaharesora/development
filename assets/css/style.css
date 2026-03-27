@@ -2809,6 +2809,11 @@ body:not(.home-page) .service-local-nav li {
 
 /* スマホではさらに少し詰める */
 @media (max-width: 768px) {
+  .home-page.static-header-home .brand {
+    padding: 6px 8px;
+    border-radius: 10px;
+    background: rgba(204, 231, 255, .8);
+  }
   .brand-name {
     gap: 4px;
   }
@@ -2816,11 +2821,6 @@ body:not(.home-page) .service-local-nav li {
 
 
 @media (max-width: 768px) {
-  .nav-item:not(.cta) {
-    text-decoration: underline;
-    text-decoration-thickness: 0.5px;
-    text-underline-offset: 0.16em;
-  }
   .nav-cta-group .nav-item.cta {
   min-height: 28px;
   padding: 0.38rem 0.55rem;
