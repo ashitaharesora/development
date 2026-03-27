@@ -1828,7 +1828,7 @@ body:not(.home-page) .service-local-nav li {
 }
 
 .home-page.static-header-home .brand-kicker {
-  font-size: 6px;
+  font-size: 8px;
   letter-spacing: .08em;
   color: var(--muted);
 }
@@ -1917,7 +1917,7 @@ body:not(.home-page) .service-local-nav li {
 
   .home-page.static-header-home .brand-name {
     white-space: normal;
-    font-size: 15.85px;
+    font-size: 15.95px;
     line-height: 1.35;
   }
 
