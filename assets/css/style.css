@@ -1902,14 +1902,13 @@ body:not(.home-page) .service-local-nav li {
 
 @media (max-width: 900px) {
   .home-page.static-header-home .header-inner {
-    padding: 14px 16px;
+    padding: 10px 10px;
     align-items: flex-start;
   }
 
   .home-page.static-header-home .brand {
     width: 100%;
     gap: 10px;
-    align-items: flex-start;
   }
 
   .home-page.static-header-home .brand-logo {
