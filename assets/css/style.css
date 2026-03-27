@@ -1901,7 +1901,7 @@ body:not(.home-page) .service-local-nav li {
 
 @media (max-width: 900px) {
   .home-page.static-header-home .header-inner {
-    padding: 10px 10px;
+    padding: 3px 3px;
     align-items: flex-start;
   }
 
@@ -1934,7 +1934,7 @@ body:not(.home-page) .service-local-nav li {
   }
 
   .home-page.static-header-home .nav-item {
-    font-size: 12px;
+    font-size: 13px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -2780,7 +2780,7 @@ body:not(.home-page) .service-local-nav li {
 
   .nav-cta-group {
     gap: 6px;
-    margin-top: 4px;
+    margin-top: 2px;
   }
 
   .nav-cta-group .nav-item.cta {
