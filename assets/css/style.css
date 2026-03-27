@@ -1934,13 +1934,11 @@ body:not(.home-page) .service-local-nav li {
   }
 
   .home-page.static-header-home .nav-item {
-    font-size: 14.5px;
+    font-size: 10px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 6px 10px;
-    border-radius: 999px;
-    background: rgba(204, 231, 255, .8);
+    padding: 0px 10px;
   }
 
   .home-page.static-header-home .nav-item.cta {
