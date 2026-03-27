@@ -2821,4 +2821,9 @@ body:not(.home-page) .service-local-nav li {
     text-decoration-thickness: 0.5px;
     text-underline-offset: 0.16em;
   }
+  .nav-cta-group .nav-item.cta {
+  min-height: 28px;
+  padding: 0.38rem 0.55rem;
 }
+}
+
