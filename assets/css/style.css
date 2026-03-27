@@ -1931,7 +1931,7 @@ body:not(.home-page) .service-local-nav li {
 
   .home-page.static-header-home .nav-list {
     gap: 10px 14px;
-    justify-content: flex-start;
+    justify-content: center;
     padding-top: 10px !important;
   }
 
