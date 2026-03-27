@@ -1929,7 +1929,7 @@ body:not(.home-page) .service-local-nav li {
   }
 
   .home-page.static-header-home .nav-list {
-    gap: 8px 15px;
+    gap: 4px 16px;
     justify-content: center;
     padding-top: 10px !important;
   }
