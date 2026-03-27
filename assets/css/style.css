@@ -2114,8 +2114,8 @@ body:not(.home-page) .service-local-nav li {
 /* スマホでは縦並びに戻す */
 @media (max-width: 900px) {
   .home-page.static-header-home .hero .container {
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
   }
 
   .home-page.static-header-home .hero-kicker {
