@@ -2717,3 +2717,86 @@ body:not(.home-page) .service-local-nav li {
     font-size: 0.74rem;
   }
 }
+
+/* ===== mobile final adjust ===== */
+@media (max-width: 768px) {
+
+  /* 左右余白を今より狭くする */
+  .container,
+  .header-inner,
+  .footer-inner {
+    width: 100%;
+    max-width: none;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  /* ヘッダー全体を少し低くする */
+  .site-header {
+    padding: 0;
+  }
+
+  .header-inner {
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+
+  /* ロゴまわり */
+  .brand {
+    grid-template-columns: 28px 1fr;
+    gap: 6px;
+    align-items: center;
+    margin-bottom: 4px;
+  }
+
+  .brand-logo {
+    width: 28px;
+    height: 28px;
+    flex: 0 0 28px;
+  }
+
+  .brand-kicker {
+    font-size: 0.52rem;
+    line-height: 1.15;
+    margin-bottom: 0;
+  }
+
+  .brand-name {
+    font-size: 0.76rem;
+    line-height: 1.1;
+    white-space: nowrap;
+  }
+
+  /* ナビの余白も少し圧縮 */
+  .nav-list {
+    gap: 4px 8px;
+  }
+
+  .nav-item {
+    font-size: 0.72rem;
+    line-height: 1.1;
+  }
+
+  .nav-cta-group {
+    gap: 6px;
+    margin-top: 4px;
+  }
+
+  .nav-cta-group .nav-item.cta {
+    min-height: 30px;
+    padding: 0.45rem 0.55rem;
+    font-size: 0.7rem;
+  }
+
+  /* 本文とフッターも左右余白を少し詰める */
+  .section,
+  .page-hero {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .footer-inner {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
