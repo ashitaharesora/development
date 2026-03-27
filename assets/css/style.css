@@ -1807,7 +1807,6 @@ body:not(.home-page) .service-local-nav li {
 .home-page.static-header-home .brand {
   display: flex;
   align-items: center;
-  gap: 8px;
   min-width: 0;
 }
 
