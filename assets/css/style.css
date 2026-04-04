@@ -1829,6 +1829,8 @@ body:not(.home-page) .service-local-nav li {
   font-size: 9px;
   letter-spacing: .08em;
   color: var(--muted);
+  line-height: 1.15;
+  margin-bottom: 0;
 }
 
 .home-page.static-header-home .brand-name {
@@ -2739,7 +2741,6 @@ body:not(.home-page) .service-local-nav li {
   /* ロゴまわり */
   .brand {
     grid-template-columns: 28px 1fr;
-    gap: 6px;
     align-items: center;
     margin-bottom: 0px;
   }
@@ -2748,12 +2749,6 @@ body:not(.home-page) .service-local-nav li {
     width: 18px;
     height: 18px;
     flex: 0 0 18px;
-  }
-
-  .brand-kicker {
-    font-size: 0.52rem;
-    line-height: 1.15;
-    margin-bottom: 0;
   }
 
   .brand-name {
@@ -3257,7 +3252,6 @@ body:not(.home-page) .service-local-nav li {
     position: relative;
     display: grid;
     grid-template-columns: 28px 1fr;
-    gap: 6px;
     align-items: center;
     width: 100%;
     margin-bottom: 0;
@@ -3275,9 +3269,9 @@ body:not(.home-page) .service-local-nav li {
   }
 
   .static-header-service .brand-logo {
-    width: 18px;
-    height: 18px;
-    flex: 0 0 18px;
+    width: 36px;
+    height: 36px;
+    flex-basis: 36px;
   }
 
   .static-header-service .brand-text {
@@ -3292,7 +3286,7 @@ body:not(.home-page) .service-local-nav li {
   }
 
   .static-header-service .brand-name {
-    font-size: 0.76rem;
+    font-size: 9px;   
     line-height: 1.1;
     white-space: nowrap;
   }
