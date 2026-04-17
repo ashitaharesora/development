@@ -54,6 +54,13 @@ img {
   border-bottom: 1px solid var(--line)
 }
 
+.site-header a,
+.brand,
+.brand-name,
+.nav-item {
+  text-decoration: none;
+}
+
 .header-inner {
   max-width: var(--max);
   margin: 0 auto;
