@@ -7,16 +7,16 @@
 
 :root {
   --bg: #ffffff;
-  --text: #172033;
-  --muted: #5d697d;
-  --line: #d7dfeb;
-  --accent: #d9ecfb;
+  --text: #005183;
+  --muted: #666464;
+  --line: #dfdfdf;
+  --accent: #e8f2f9;
   --accent-strong: #9cc7eb;
-  --card: #f7fbff;
-  --hero: #103f70;
-  --hero-overlay: rgba(7, 31, 59, .44);
+  --card: #ffffff;
+  --hero: #003a60;
+  --hero-overlay: rgba(0, 50, 80, .40);
   --max: 1100px;
-  --shadow: 0 18px 44px rgba(18, 45, 78, .08);
+  --shadow: 0 2px 12px rgba(0, 81, 131, .06);
 
   /* ===== 左右余白（サイドパディング）の一括管理 =====
      ここを変えると container / header / footer のサイド余白が
@@ -42,7 +42,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Meiryo", sans-serif;
   color: var(--text);
   background: var(--bg);
   line-height: 1.9
@@ -160,7 +160,7 @@ main {
   position: relative;
   overflow: hidden;
   border-bottom: 1px solid rgba(255, 255, 255, .12);
-  background: #163f6d;
+  background: #003a60;
   color: #fff
 }
 
@@ -168,7 +168,7 @@ main {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(115deg, var(--hero-overlay), rgba(7, 31, 59, .30) 45%, rgba(7, 31, 59, .18)), url('../img/photo1.jpg') center/cover no-repeat
+  background: linear-gradient(115deg, var(--hero-overlay), rgba(0, 50, 80, .30) 45%, rgba(0, 50, 80, .18)), url('../img/photo1.jpg') center/cover no-repeat
 }
 
 .hero::after {
@@ -176,7 +176,7 @@ main {
   position: absolute;
   inset: auto 0 0 0;
   height: 120px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(7, 31, 59, .12))
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(0, 50, 80, .12))
 }
 
 .hero .container {
@@ -249,7 +249,7 @@ main {
 
 .button:hover {
   transform: translateY(-1px);
-  box-shadow: 0 10px 24px rgba(18, 45, 78, .08)
+  box-shadow: 0 10px 24px rgba(0, 81, 131, .08)
 }
 
 .section {
@@ -257,7 +257,7 @@ main {
 }
 
 .section.alt {
-  background: #f7fbff
+  background: #f2f2f3
 }
 
 .section h2 {
@@ -314,7 +314,7 @@ main {
 
 .card p {
   margin: 0;
-  color: #374151
+  color: var(--text)
 }
 
 .list {
@@ -347,7 +347,7 @@ main {
 .page-hero {
   padding: 56px 0 40px;
   border-bottom: 1px solid var(--line);
-  background: linear-gradient(180deg, #fff, #f8fbff)
+  background: linear-gradient(180deg, #fff, #f2f2f3)
 }
 
 .page-hero h1 {
@@ -449,7 +449,7 @@ main {
 .notice {
   padding: 16px 18px;
   border: 1px solid var(--accent-strong);
-  background: #f5fbff;
+  background: var(--accent);
   border-radius: 16px
 }
 
@@ -464,13 +464,13 @@ main {
 }
 
 .cta-box {
-  background: linear-gradient(135deg, #f7fbff, #eef6ff);
+  background: linear-gradient(135deg, #f2f2f3, #e8f2f9);
   padding: 30px
 }
 
 .site-footer {
   border-top: 1px solid var(--line);
-  background: rgba(204, 231, 255, .8)
+  background: rgba(232, 242, 249, .8)
 }
 
 .footer-inner {
@@ -576,7 +576,7 @@ main {
 }
 
 .highlight-card {
-  background: linear-gradient(180deg, #fff, #f8fbff);
+  background: linear-gradient(180deg, #fff, #f2f2f3);
   min-width: 0;
 }
 
@@ -731,7 +731,7 @@ main {
   padding: 84px 28px 28px;
   background: rgba(255, 255, 255, .98);
   border-left: 1px solid var(--line);
-  box-shadow: -12px 0 40px rgba(18, 45, 78, .12);
+  box-shadow: -12px 0 40px rgba(0, 81, 131, .12);
   z-index: 40;
   display: none;
 }
@@ -796,7 +796,7 @@ main {
 }
 
 .home-page .nav-close:hover {
-  background: #f7fbff;
+  background: var(--accent);
 }
 
 @media (max-width: 900px) {
@@ -827,7 +827,7 @@ main {
 
 .home-page .hero::before {
   background:
-    linear-gradient(115deg, var(--hero-overlay), rgba(7, 31, 59, .30) 45%, rgba(7, 31, 59, .18)),
+    linear-gradient(115deg, var(--hero-overlay), rgba(0, 50, 80, .30) 45%, rgba(0, 50, 80, .18)),
     url('../img/photo1.jpg') center center / cover no-repeat;
 }
 
@@ -856,7 +856,7 @@ main {
 
   .home-page .hero::before {
     background:
-      linear-gradient(115deg, var(--hero-overlay), rgba(7, 31, 59, .30) 45%, rgba(7, 31, 59, .18)),
+      linear-gradient(115deg, var(--hero-overlay), rgba(0, 50, 80, .30) 45%, rgba(0, 50, 80, .18)),
       url('../img/photo1.jpg') 78% center / cover no-repeat;
   }
 
@@ -1253,7 +1253,7 @@ main {
 }
 
 .price-table th {
-  background: #d9ecfb;
+  background: #e8f2f9;
   font-family: 'はれのそら明朝', "Yu Mincho", "Hiragino Mincho ProN", serif;
   font-weight: 400;
 }
@@ -1280,7 +1280,7 @@ main {
 
 .service-note {
   margin: 12px 0 0;
-  color: #355a8b;
+  color: var(--text);
   line-height: 1.7;
 }
 
@@ -1314,7 +1314,7 @@ main {
 }
 
 .management-pricing .price-table th {
-  background: #ecd9c1;
+  background: #f0ede8;
 }
 
 .spot-note {
@@ -1850,7 +1850,7 @@ main {
   height: 52px;
   display: block;
   margin-bottom: 14px;
-  color: #172033;
+  color: #005183;
   opacity: 0.92;
 }
 
@@ -2220,7 +2220,7 @@ main {
     padding: 10px 8px calc(10px + env(safe-area-inset-bottom));
     background: rgba(255, 255, 255, 0.96);
     border-top: 1px solid var(--line);
-    box-shadow: 0 -8px 24px rgba(18, 45, 78, .08);
+    box-shadow: 0 -8px 24px rgba(0, 81, 131, .08);
 
     opacity: 0;
     visibility: hidden;
@@ -2514,7 +2514,7 @@ main {
     padding: 10px 8px calc(10px + env(safe-area-inset-bottom));
     background: rgba(255, 255, 255, 0.96);
     border-top: 1px solid var(--line);
-    box-shadow: 0 -8px 24px rgba(18, 45, 78, .08);
+    box-shadow: 0 -8px 24px rgba(0, 81, 131, .08);
     opacity: 0;
     visibility: hidden;
     transform: translateY(110%);
